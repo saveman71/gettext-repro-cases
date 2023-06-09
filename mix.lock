@@ -1,0 +1,4 @@
+%{
+  "expo": {:hex, :expo, "0.4.1", "1c61d18a5df197dfda38861673d392e642649a9cef7694d2f97a587b2cfb319b", [:mix], [], "hexpm", "2ff7ba7a798c8c543c12550fa0e2cbc81b95d4974c65855d8d15ba7b37a1ce47"},
+  "gettext": {:hex, :gettext, "0.22.2", "6bfca374de34ecc913a28ba391ca184d88d77810a3e427afa8454a71a51341ac", [:mix], [{:expo, "~> 0.4.0", [hex: :expo, repo: "hexpm", optional: false]}], "hexpm", "8a2d389673aea82d7eae387e6a2ccc12660610080ae7beb19452cfdc1ec30f60"},
+}

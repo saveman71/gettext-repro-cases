@@ -1,0 +1,11 @@
+#: lib/gettext_mwe.ex:20
+#, elixir-autogen, elixir-format
+msgid "Singular."
+msgid_plural "Plural."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/gettext_mwe.ex:18
+#, elixir-autogen, elixir-format
+msgid "Singular."
+msgstr ""
