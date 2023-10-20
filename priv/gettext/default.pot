@@ -1,4 +1,4 @@
 #: lib/gettext_mwe.ex:6
 #, elixir-autogen, elixir-format
-msgid "Test before commit"
+msgid "First string"
 msgstr ""

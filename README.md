@@ -1,21 +1,18 @@
 # GettextMwe
 
-**TODO: Add description**
+How to reproduce:
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `gettext_mwe` to your list of dependencies in `mix.exs`:
+In `gettext_mwe.ex`, add a second `gettext` call to the `gettext` function:
 
 ```elixir
-def deps do
-  [
-    {:gettext_mwe, "~> 0.1.0"}
-  ]
-end
+  gettext("First string")
+  gettext("Second string")
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/gettext_mwe>.
+Run `mix gettext.extract --merge` and observe that both `po` and `pot` files are updated.
 
+Run `git checkout -- priv/gettext/fr/LC_MESSAGES/default.po` to "accidentally" reset the `po` file.
+
+Run `mix gettext.extract --merge` and observe that nothing is updated.
+
+From that point on, if you commit and push, gettext won't catch the new strings until the code is modified.

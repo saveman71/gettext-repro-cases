@@ -3,7 +3,5 @@ defmodule GettextMwe do
 
   @moduledoc false
 
-  gettext("Test before commit")
-
-  IO.puts("compiled")
+  gettext("First string")
 end
