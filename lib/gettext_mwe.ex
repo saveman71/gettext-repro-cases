@@ -3,11 +3,7 @@ defmodule GettextMwe do
 
   @moduledoc false
 
-  def singular do
-    gettext("Singular.")
-  end
+  gettext("Test before commit")
 
-  def plural(count) do
-    ngettext("Singular.", "Plural.", count)
-  end
+  IO.puts("compiled")
 end
